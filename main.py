@@ -1,41 +1,41 @@
 import random
 
-def gameWin(comp, you):
+def gameWin(computer, you):
 
-    if comp == you:
+    if computer == you:
         return None
     
-    elif comp == 's':
+    elif computer == 's':
         if you=='p':
             return False
         elif you=='r':
             return True   
    
-    elif comp == 'p':
+    elif computer == 'p':
         if you=='r':
             return False
         elif you=='s':
             return True
     
-    elif comp == 'r':
+    elif computer == 'r':
         if you=='s':
             return False
         elif you=='p':
             return True
 
-print("Comp Turn: Scissor(s) Paper(p) or Rock(r)?")
+print("Computer Turn: Scissor(s) Paper(p) or Rock(r)?")
 randNo = random.randint(1, 3) 
 if randNo == 1:
-    comp = 's'
+    computer = 's'
 elif randNo == 2:
-    comp = 'p'
+    computer = 'p'
 elif randNo == 3:
-    comp = 'r'
+    computer = 'r'
 
 you = input("Your Turn: Scissor(s) Paper(p) or Rock(r)?")
-a = gameWin(comp, you)
+a = gameWin(computer, you)
 
-print(f"Computer chose {comp}")
+print(f"Computer chose {computer}")
 print(f"You chose {you}")
 
 if a == None:
