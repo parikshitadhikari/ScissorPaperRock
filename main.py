@@ -24,12 +24,12 @@ def gameWin(computer, you):
             return True
 
 print("Computer Turn: Scissor(s) Paper(p) or Rock(r)?")
-randNo = random.randint(1, 3) 
-if randNo == 1:
+randomNum = random.randint(1, 3) 
+if randomNum == 1:
     computer = 's'
-elif randNo == 2:
+elif randomNum == 2:
     computer = 'p'
-elif randNo == 3:
+elif randomNum == 3:
     computer = 'r'
 
 you = input("Your Turn: Scissor(s) Paper(p) or Rock(r)?")
