@@ -35,8 +35,8 @@ elif randomNum == 3:
 you = input("Your Turn: Scissor(s) Paper(p) or Rock(r)?")
 a = gameWin(computer, you)
 
-print(f"Computer chose {computer}")
-print(f"You chose {you}")
+print(f"Computer choose {computer}")
+print(f"You choose {you}")
 
 if a == None:
     print("The game is a tie!")
